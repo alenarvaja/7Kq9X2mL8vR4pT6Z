@@ -1,0 +1,22 @@
+﻿  stdafx.cpp
+  AccountManager.cpp
+  AllowableIpList.cpp
+  Console.cpp
+  CriticalSection.cpp
+  JoinServer.cpp
+  JoinServerProtocol.cpp
+  Log.cpp
+  MD5.cpp
+  ReadScript.cpp
+  MiniDump.cpp
+  QueryManager.cpp
+  Queue.cpp
+  ServerDisplayer.cpp
+  ServerManager.cpp
+  SocketManager.cpp
+  SocketManagerUdp.cpp
+  Util.cpp
+  Generando código...
+  JoinServer.vcxproj -> D:\MuSources\MuEmu-0.97k-kayito-master\GitSource\MuServer\bin\Debug\MSSQL\JoinServer\JoinServer.exe
+  "pwsh.exe" no se reconoce como un comando interno o externo,
+  programa o archivo por lotes ejecutable.

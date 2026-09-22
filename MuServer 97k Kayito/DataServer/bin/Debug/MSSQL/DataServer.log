@@ -1,0 +1,28 @@
+﻿  stdafx.cpp
+  AllowableIpList.cpp
+  BadSyntax.cpp
+  CharacterManager.cpp
+  CommandManager.cpp
+  Console.cpp
+  CriticalSection.cpp
+  DataServer.cpp
+  DataServerProtocol.cpp
+  Guild.cpp
+  GuildManager.cpp
+  Log.cpp
+  ReadScript.cpp
+  MiniDump.cpp
+  GoldenArcher.cpp
+  QueryManager.cpp
+  Queue.cpp
+  ServerDisplayer.cpp
+  ServerManager.cpp
+  SocketManager.cpp
+  Util.cpp
+  Generando código...
+  Compilando...
+  Warehouse.cpp
+  Generando código...
+  DataServer.vcxproj -> D:\MuSources\MuEmu-0.97k-kayito-master\GitSource\MuServer\bin\Debug\MSSQL\DataServer\DataServer.exe
+  "pwsh.exe" no se reconoce como un comando interno o externo,
+  programa o archivo por lotes ejecutable.

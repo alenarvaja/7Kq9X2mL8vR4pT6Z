@@ -1,0 +1,20 @@
+﻿  stdafx.cpp
+  ClientManager.cpp
+  ConnectServer.cpp
+  ConnectServerProtocol.cpp
+  Console.cpp
+  CriticalSection.cpp
+  IpManager.cpp
+  Log.cpp
+  ReadScript.cpp
+  MiniDump.cpp
+  Queue.cpp
+  ServerDisplayer.cpp
+  ServerList.cpp
+  SocketManager.cpp
+  SocketManagerUdp.cpp
+  Util.cpp
+  Generando código...
+  ConnectServer.vcxproj -> D:\MuSources\MuEmu-0.97k-kayito-master\GitSource\MuServer\bin\Debug\ConnectServer\ConnectServer.exe
+  "pwsh.exe" no se reconoce como un comando interno o externo,
+  programa o archivo por lotes ejecutable.
