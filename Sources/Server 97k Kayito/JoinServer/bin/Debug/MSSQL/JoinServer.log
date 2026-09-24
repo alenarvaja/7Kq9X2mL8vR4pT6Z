@@ -17,6 +17,6 @@
   SocketManagerUdp.cpp
   Util.cpp
   Generando código...
-  JoinServer.vcxproj -> D:\MuSources\MuEmu-0.97k-kayito-master\GitSource\MuServer\bin\Debug\MSSQL\JoinServer\JoinServer.exe
+  JoinServer.vcxproj -> C:\MUONLINE\GitSource\Sources\Server 97k Kayito\bin\Debug\MSSQL\JoinServer\JoinServer.exe
   "pwsh.exe" no se reconoce como un comando interno o externo,
   programa o archivo por lotes ejecutable.

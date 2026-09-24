@@ -110,7 +110,7 @@ extern bool g_PetEnableDuel;
 
 MASTER_LEVEL_VALUE	Master_Level_Data;
 
-BYTE Version[SIZE_PROTOCOLVERSION] = {'1'+1, '0'+2, '4'+3, '0'+4, '5'+5};
+BYTE Version[SIZE_PROTOCOLVERSION] = {'0'+1, '9'+2, '7'+3, '1'+4, '1'+5};
 BYTE Serial[SIZE_PROTOCOLSERIAL+1] = {"TbYehR2hFUPBKgZj"};
 
 CWsctlc     SocketClient;
@@ -291,11 +291,15 @@ void ReceiveServerList( BYTE *ReceiveBuffer )
 	LPPHEADER_DEFAULT_SUBCODE_WORD Data = (LPPHEADER_DEFAULT_SUBCODE_WORD)ReceiveBuffer;
 	int Offset = sizeof(PHEADER_DEFAULT_SUBCODE_WORD);
 	
-	BYTE Value2 = *(ReceiveBuffer+Offset++);
+	//BYTE Value2 = *(ReceiveBuffer+Offset++);
+
+	//g_ServerListManager->Release();
+
+	//g_ServerListManager->SetTotalServer(MAKEWORD(Value2, Data->Value));
 
 	g_ServerListManager->Release();
 
-	g_ServerListManager->SetTotalServer(MAKEWORD(Value2, Data->Value));
+	g_ServerListManager->SetTotalServer(Data->Value);
 	
 	for(int i=0 ; i<g_ServerListManager->GetTotalServer() ; i++)
 	{
@@ -359,6 +363,18 @@ void ReceiveJoinServer( BYTE *ReceiveBuffer )
 {
 	LPPRECEIVE_JOIN_SERVER Data2 = (LPPRECEIVE_JOIN_SERVER)ReceiveBuffer;
 	
+	g_ConsoleDebug->Write(
+		MCD_NORMAL,
+		"ReceiveJoinServer: Result=%d Index=%d Version=%c%c%c%c%c",
+		Data2->Result,
+		MAKEWORD(Data2->NumberL, Data2->NumberH),
+		Data2->Version[0],
+		Data2->Version[1],
+		Data2->Version[2],
+		Data2->Version[3],
+		Data2->Version[4]
+	);
+
     if ( LogIn!=0 )
     {
         HeroKey = ((int)(Data2->NumberH)<<8) + Data2->NumberL;
@@ -11577,18 +11593,30 @@ void ProtocolCompiler( CWsctlc *pSocketClient, int iTranslation, int iParam)
 {
 	//if(CurrentProtocolState >= RECEIVE_JOIN_MAP_SERVER)
 	//	return;
+	//g_ConsoleDebug->Write(MCD_NORMAL, "ProtocolCompiler called");
+
 	int HeadCode;
 	int Size = 0;
 	
 	while(1)
 	{
-		BYTE *ReceiveBuffer = pSocketClient->GetReadMsg();
-		if( ReceiveBuffer == NULL )
+		BYTE* ReceiveBuffer = pSocketClient->GetReadMsg();
+
+		if (ReceiveBuffer == NULL)
 		{
 			break;
 		}
-		else 
+		else
 		{
+			//g_ConsoleDebug->Write(
+			//	MCD_NORMAL,
+			//	"ProtocolCompiler GOT PACKET: %02X %02X %02X %02X",
+			//	ReceiveBuffer[0],
+			//	ReceiveBuffer[1],
+			//	ReceiveBuffer[2],
+			//	ReceiveBuffer[3]
+			//);
+
 			BOOL bEncrypted = FALSE;
 			BYTE byDec[MAX_SPE_BUFFERSIZE_];
 			if( ReceiveBuffer[0] == 0xC1 )
@@ -12752,6 +12780,14 @@ BOOL TranslateProtocol( int HeadCode, BYTE *ReceiveBuffer, int Size, BOOL bEncry
 	case 0xF1:     			
 		{
 			LPPHEADER_DEFAULT_SUBCODE Data = (LPPHEADER_DEFAULT_SUBCODE)ReceiveBuffer;
+
+			g_ConsoleDebug->Write(
+				MCD_NORMAL,
+				"TranslateProtocol F1: SubCode=%02X Size=%d",
+				Data->SubCode,
+				Size
+			);
+
 			switch( Data->SubCode )
 			{
 			case 0x00: //receive join server
@@ -12980,7 +13016,7 @@ BOOL TranslateProtocol( int HeadCode, BYTE *ReceiveBuffer, int Size, BOOL bEncry
 			}
 			switch( subcode )
 			{
-			case 0x06:
+			case 0x02:
 				ReceiveServerList(ReceiveBuffer);
 				break;
 			case 0x03:

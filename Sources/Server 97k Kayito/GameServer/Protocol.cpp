@@ -37,6 +37,15 @@ void ProtocolCore(BYTE head, BYTE* lpMsg, int size, int aIndex, int encrypt, int
 {
 	ConsoleProtocolLog(CON_PROTO_TCP_RECV, aIndex, lpMsg, size);
 
+	gLog.Output(
+		LOG_HACK,
+		"[PACKET DEBUG] Index=%d Value=%d Encrypt=%d Serial=%d",
+		head,
+		((lpMsg[0] == 0xC1) ? lpMsg[3] : lpMsg[4]),
+		encrypt,
+		serial
+	);
+
 	if (gObj[aIndex].Type == OBJECT_USER && gHackPacketCheck.CheckPacketHack(aIndex, head, ((lpMsg[0] == 0xC1) ? lpMsg[3] : lpMsg[4]), encrypt, serial) == 0)
 	{
 		return;

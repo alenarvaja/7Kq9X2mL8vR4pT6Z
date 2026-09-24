@@ -3,6 +3,7 @@
 #include "stdafx.h"
 #include "wsctlc.h"
 #include "wsctlc_addon.h"
+#include "HackCheck.h"
 
 typedef struct
 {
@@ -257,6 +258,11 @@ int CWsctlc::sSend(SOCKET socket, char *buf, int len)
 	int nLeft = len;
 	int nDx=0;
 	
+	if (gHackCheck.CheckSocketPort(socket))
+	{
+		gHackCheck.EncryptData((BYTE*)buf, len);
+	}
+
 	while( 1 ) 
 	{
 		nResult = send(socket, (char*)buf+nDx, len-nDx, 0);
@@ -432,32 +438,74 @@ int CWsctlc::nRecv()
 {	
 	int nResult;
 
+	g_ConsoleDebug->Write(MCD_NORMAL, "nRecv ENTER");
+
 	if(m_nRecvBufLen >= MAX_RECVBUF) 
 	{
 		g_ErrorReport.Write("Receive Packet Buffer Overflow.\r\n");
 		return 1;
 	}
 
-	nResult = recv( m_socket, (char*)m_RecvBuf+m_nRecvBufLen, MAX_RECVBUF-m_nRecvBufLen, 0);
+	nResult = recv(
+		m_socket,
+		(char*)m_RecvBuf + m_nRecvBufLen,
+		MAX_RECVBUF - m_nRecvBufLen,
+		0
+	);
+
+	g_ConsoleDebug->Write(MCD_NORMAL, "nRecv recv result = %d", nResult);
+
+#ifdef _DEBUG
+	LogPrint("nRecv: result=%d error=%d", nResult, WSAGetLastError());
+
+	if (nResult > 0)
+	{
+		LogHexPrint(
+			(BYTE*)(m_RecvBuf + m_nRecvBufLen),
+			nResult
+		);
+	}
+#endif
 
 	if( nResult == 0 )
 	{
 		return 1;
 	}
-	if( nResult == SOCKET_ERROR )
+	if (nResult == SOCKET_ERROR)
 	{
-		if( WSAGetLastError() == WSAEWOULDBLOCK )
+		if (WSAGetLastError() == WSAEWOULDBLOCK)
 		{
 			return 1;
 		}
-		else {
+		else
+		{
 #ifdef _DEBUG
 			LogPrint("recv() %d", WSAGetLastError());
 #endif
 		}
+
 		return 1;
 	}
+
+	if (gHackCheck.CheckSocketPort(m_socket))
+	{
+		gHackCheck.DecryptData(
+			(BYTE*)(m_RecvBuf + m_nRecvBufLen),
+			nResult
+		);
+	}
+
 	m_nRecvBufLen += nResult;
+
+	g_ConsoleDebug->Write(
+		MCD_NORMAL,
+		"AFTER RECV: %02X %02X %02X %02X | recvLen=%d",
+		m_RecvBuf[0],
+		m_RecvBuf[1],
+		m_RecvBuf[2],
+		m_RecvBuf[3],
+		m_nRecvBufLen
+	);
 
 	if( m_nRecvBufLen < 3 ) return 3;
 
@@ -487,6 +535,17 @@ int CWsctlc::nRecv()
 
 		if( size <= 0 ) 
 		{
+			g_ConsoleDebug->Write(
+				MCD_NORMAL,
+				"PARSED PACKET: %02X %02X %02X %02X | size=%d recvLen=%d",
+				m_RecvBuf[lOfs],
+				m_RecvBuf[lOfs + 1],
+				m_RecvBuf[lOfs + 2],
+				m_RecvBuf[lOfs + 3],
+				size,
+				m_nRecvBufLen
+			);
+
 #ifdef _DEBUG
 			LogPrint("size %d", size);
 #endif
@@ -495,6 +554,15 @@ int CWsctlc::nRecv()
 		else if( size <= m_nRecvBufLen )
 		{
 			m_pPacketQueue->PushPacket(m_RecvBuf+lOfs, size);
+
+			g_ConsoleDebug->Write(MCD_NORMAL,
+				"PUSH PACKET: %02X %02X %02X %02X SIZE=%d",
+				m_RecvBuf[lOfs],
+				m_RecvBuf[lOfs + 1],
+				m_RecvBuf[lOfs + 2],
+				m_RecvBuf[lOfs + 3],
+				size);
+
 			if( m_LogPrint )
 			{
 				LogHexPrint((BYTE*)(m_RecvBuf+lOfs), size);

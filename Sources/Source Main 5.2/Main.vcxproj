@@ -81,7 +81,7 @@
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <SmallerTypeCheck>true</SmallerTypeCheck>
+      <SmallerTypeCheck>false</SmallerTypeCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>Use</PrecompiledHeader>
@@ -322,6 +322,7 @@
     <ClCompile Include="source\GOBoid.cpp" />
     <ClCompile Include="source\GuildCache.cpp" />
     <ClCompile Include="source\GuildManager.cpp" />
+    <ClCompile Include="source\HackCheck.cpp" />
     <ClCompile Include="source\Input.cpp" />
     <ClCompile Include="source\ItemAddOptioninfo.cpp" />
     <ClCompile Include="source\ItemInfo.cpp" />
@@ -694,6 +695,7 @@
     <ClInclude Include="source\GOBoid.h" />
     <ClInclude Include="source\GuildCache.h" />
     <ClInclude Include="source\GuildManager.h" />
+    <ClInclude Include="source\HackCheck.h" />
     <ClInclude Include="source\iexplorer.h" />
     <ClInclude Include="source\InfoHelperFunctions.h" />
     <ClInclude Include="source\Input.h" />

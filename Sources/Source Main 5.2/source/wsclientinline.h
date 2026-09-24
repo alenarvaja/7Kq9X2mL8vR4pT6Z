@@ -135,7 +135,7 @@ __forceinline int SendPacket( char *buf, int len, BOOL bEncrypt = FALSE, BOOL bF
 {\
 	CStreamPacketEngine spe;\
 	spe.Init( 0xC1, 0xF4);\
-	BYTE byData = ( BYTE)0x06;\
+	BYTE byData = (BYTE)0x02;\
 	spe.AddData( &byData, 1, FALSE);\
 	spe.Send();\
 }

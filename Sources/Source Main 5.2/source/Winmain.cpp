@@ -35,7 +35,7 @@
 #include "./Utilities/Log/muConsoleDebug.h"
 #include "ProtocolSend.h"
 #include "ProtectSysKey.h"
-
+#include "HackCheck.h"
 #include "CBTMessageBox.h"
 #include "./ExternalObject/leaf/regkey.h"
 
@@ -588,8 +588,10 @@ LONG FAR PASCAL WndProc(HWND hwnd,UINT msg,WPARAM wParam,LPARAM lParam)
 		{
 		case FD_CONNECT :
 			break;
-		case FD_READ :
+		case FD_READ:
+			g_ConsoleDebug->Write(MCD_NORMAL, "FD_READ fired - BEFORE nRecv");
 			SocketClient.nRecv();
+			g_ConsoleDebug->Write(MCD_NORMAL, "FD_READ fired - AFTER nRecv");
 			break;
 		case FD_WRITE :
 			SocketClient.FDWriteSend();
@@ -1374,6 +1376,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, PSTR szCmdLin
 	VM_START
 	g_SimpleModulusCS.LoadEncryptionKey( "Data\\Enc1.dat");
 	g_SimpleModulusSC.LoadDecryptionKey( "Data\\Dec2.dat");
+	gHackCheck.Init();
 	VM_END
 
 	g_ErrorReport.Write( "> To read config.ini.\r\n");

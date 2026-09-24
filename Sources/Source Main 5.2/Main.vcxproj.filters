@@ -1177,6 +1177,9 @@
     <ClCompile Include="source\ExternalObject\Leaf\xstreambuf.cpp">
       <Filter>External Object\Leaf</Filter>
     </ClCompile>
+    <ClCompile Include="source\HackCheck.cpp">
+      <Filter>MU\Network</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\BlackWin.h">
@@ -2246,6 +2249,9 @@
     </ClInclude>
     <ClInclude Include="source\ExternalObject\Leaf\xstreambuf.h">
       <Filter>External Object\Leaf</Filter>
+    </ClInclude>
+    <ClInclude Include="source\HackCheck.h">
+      <Filter>MU\Network</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

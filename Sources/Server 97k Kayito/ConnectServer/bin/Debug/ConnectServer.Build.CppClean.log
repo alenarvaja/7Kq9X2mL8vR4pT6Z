@@ -1,33 +1,33 @@
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.pch
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\vc141.pdb
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\vc141.idb
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\stdafx.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\util.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\socketmanagerudp.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\socketmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\serverlist.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\serverdisplayer.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\queue.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\minidump.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\readscript.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\log.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\ipmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\criticalsection.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\console.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserverprotocol.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\clientmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\connectserver\connectserver.ilk
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\connectserver\connectserver.exe
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\connectserver\connectserver.map
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\connectserver\connectserver.pdb
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.res
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\cl.command.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\cl.read.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\cl.write.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\link.command.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\link.read.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\link.write.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\rc.command.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\rc.read.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\connectserver\bin\debug\connectserver.tlog\rc.write.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.pch
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\vc141.pdb
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\vc141.idb
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\stdafx.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\util.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\socketmanagerudp.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\socketmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\serverlist.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\serverdisplayer.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\queue.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\minidump.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\readscript.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\log.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\ipmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\criticalsection.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\console.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserverprotocol.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.obj
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\clientmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\connectserver\connectserver.ilk
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\connectserver\connectserver.exe
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\connectserver\connectserver.map
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\connectserver\connectserver.pdb
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.res
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\cl.command.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\cl.read.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\cl.write.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\link.command.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\link.read.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\link.write.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\rc.command.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\rc.read.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\connectserver\bin\debug\connectserver.tlog\rc.write.1.tlog

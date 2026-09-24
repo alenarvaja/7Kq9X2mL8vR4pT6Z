@@ -650,6 +650,17 @@ void CSocketManager::OnRecv(int index, DWORD IoSize, IO_RECV_CONTEXT* lpIoContex
 
 	DecryptData(&lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size], IoSize);
 
+	gLog.Output(
+		LOG_CONNECT,
+		"[RECV DEBUG] Index=%d Size=%d Bytes=%02X %02X %02X %02X",
+		index,
+		IoSize,
+		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 0],
+		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 1],
+		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 2],
+		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 3]
+	);
+
 #endif
 
 	lpIoContext->IoMainBuffer.size += IoSize;

@@ -15,6 +15,6 @@
   SocketManagerUdp.cpp
   Util.cpp
   Generando código...
-  ConnectServer.vcxproj -> D:\MuSources\MuEmu-0.97k-kayito-master\GitSource\MuServer\bin\Debug\ConnectServer\ConnectServer.exe
+  ConnectServer.vcxproj -> C:\MUONLINE\GitSource\Sources\Server 97k Kayito\bin\Debug\ConnectServer\ConnectServer.exe
   "pwsh.exe" no se reconoce como un comando interno o externo,
   programa o archivo por lotes ejecutable.

@@ -1,115 +1,115 @@
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.pch
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\vc141.pdb
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\vc141.idb
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\stdafx.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\effect.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\dsprotocol.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\devilsquare.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\defaultclassinfo.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\customwing.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\customsafezone.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\custompkfree.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\customnpcmove.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\criticalsection.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\console.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\connection.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\commandmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\chaosbox.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\bonusmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\bloodcastle.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\blacklist.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\battlesoccermanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\battlesoccer.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\battleground.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\attack.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\item.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\ipmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\invasionmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\hackpacketcheck.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\hackcheck.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\guildmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\guild.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\goldenarcherbingo.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\goldenarcher.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gate.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gamemaster.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gamemain.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\fruit.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\flyingdragons.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\filter.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\experiencetable.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\eventtimemanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\eventspawnmonster.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\effectmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\message.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\memoryallocatorinfo.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\memoryallocator.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\math.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\mappath.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\mapmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\mapitem.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\map.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\log.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\jsprotocol.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itemvalue.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itemstack.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itemoptionrate.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itemoption.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itemmove.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itemmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itemdrop.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itembagmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itembagex.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\itembag.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\reconnect.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\readscript.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\randommanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\queuetimer.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\queue.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\questreward.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\questobjective.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\quest.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\protocol.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\path.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\party.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\packetmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\objectmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\npctalk.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\notice.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\move.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\monstersetbase.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\monstermanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\monster.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\minidump.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\warehouse.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\viewport.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\util.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\user.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\trade.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\socketmanagerudp.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\socketmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\skillmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\skillhitbox.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\skill.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\shopmanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\shop.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\serverinfo.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\serverdisplayer.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\serialcheck.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\schedulemanager.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\resettable.obj
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\gameserver\gameserver.ilk
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\gameserver\gameserver.exe
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\gameserver\gameserver.map
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\bin\debug\gameserver\gameserver.pdb
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.res
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\cl.command.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\cl.read.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\cl.write.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\link.command.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\link.read.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\link.write.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\rc.command.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\rc.read.1.tlog
-d:\musources\muemu-0.97k-kayito-master\gitsource\muserver\gameserver\bin\debug\gameserver.tlog\rc.write.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.pch
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\vc141.pdb
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\vc141.idb
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\stdafx.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\effect.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\dsprotocol.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\devilsquare.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\defaultclassinfo.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\customwing.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\customsafezone.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\custompkfree.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\customnpcmove.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\criticalsection.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\console.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\connection.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\commandmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\chaosbox.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\bonusmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\bloodcastle.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\blacklist.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\battlesoccermanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\battlesoccer.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\battleground.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\attack.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\item.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\ipmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\invasionmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\hackpacketcheck.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\hackcheck.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\guildmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\guild.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\goldenarcherbingo.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\goldenarcher.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gate.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gamemaster.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gamemain.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\fruit.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\flyingdragons.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\filter.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\experiencetable.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\eventtimemanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\eventspawnmonster.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\effectmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\message.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\memoryallocatorinfo.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\memoryallocator.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\math.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\mappath.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\mapmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\mapitem.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\map.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\log.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\jsprotocol.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itemvalue.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itemstack.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itemoptionrate.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itemoption.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itemmove.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itemmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itemdrop.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itembagmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itembagex.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\itembag.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\reconnect.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\readscript.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\randommanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\queuetimer.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\queue.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\questreward.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\questobjective.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\quest.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\protocol.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\path.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\party.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\packetmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\objectmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\npctalk.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\notice.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\move.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\monstersetbase.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\monstermanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\monster.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\minidump.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\warehouse.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\viewport.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\util.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\user.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\trade.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\socketmanagerudp.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\socketmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\skillmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\skillhitbox.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\skill.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\shopmanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\shop.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\serverinfo.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\serverdisplayer.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\serialcheck.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\schedulemanager.obj
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\resettable.obj
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\gameserver\gameserver.ilk
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\gameserver\gameserver.exe
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\gameserver\gameserver.map
+c:\muonline\gitsource\sources\server 97k kayito\bin\debug\gameserver\gameserver.pdb
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.res
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\cl.command.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\cl.read.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\cl.write.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\link.command.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\link.read.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\link.write.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\rc.command.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\rc.read.1.tlog
+c:\muonline\gitsource\sources\server 97k kayito\gameserver\bin\debug\gameserver.tlog\rc.write.1.tlog
