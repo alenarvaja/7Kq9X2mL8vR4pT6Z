@@ -4,6 +4,7 @@
 #include "wsctlc.h"
 #include "wsctlc_addon.h"
 #include "HackCheck.h"
+#include <vector>
 
 typedef struct
 {
@@ -250,63 +251,81 @@ int CWsctlc::Connect(char *ip_addr, unsigned short port, DWORD WinMsgNum)
 	return 1;
 }
 
-int CWsctlc::sSend(SOCKET socket, char *buf, int len)
-{	
+int CWsctlc::sSend(SOCKET socket, char* buf, int len)
+{
 	int nResult;
-	
-	
 	int nLeft = len;
-	int nDx=0;
-	
+	int nDx = 0;
+
+	std::vector<BYTE> SendBuffer(len);
+
+	memcpy(SendBuffer.data(), buf, len);
+
 	if (gHackCheck.CheckSocketPort(socket))
 	{
-		gHackCheck.EncryptData((BYTE*)buf, len);
+		gHackCheck.EncryptData(SendBuffer.data(), len);
 	}
 
-	while( 1 ) 
+	while (1)
 	{
-		nResult = send(socket, (char*)buf+nDx, len-nDx, 0);
-		if( nResult == SOCKET_ERROR )
+		nResult = send(
+			socket,
+			(char*)SendBuffer.data() + nDx,
+			nLeft,
+			0
+		);
+
+		if (nResult == SOCKET_ERROR)
 		{
-			if( WSAGetLastError() != WSAEWOULDBLOCK )
+			if (WSAGetLastError() != WSAEWOULDBLOCK)
 			{
-				g_ConsoleDebug->Write(MCD_ERROR, "[Send Packet Error] WSAGetLastError() != WSAEWOULDBLOCK");
-				g_ErrorReport.Write("[Send Packet Error] WSAGetLastError() != WSAEWOULDBLOCK\r\n");
 				Close();
 				return FALSE;
 			}
-			else 
+			else
 			{
-				if( (m_nSendBufLen+len) > MAX_SENDBUF )
+				if ((m_nSendBufLen + nLeft) > MAX_SENDBUF)
 				{
-
-					g_ConsoleDebug->Write(MCD_ERROR, "Send Packet Error] SendBuffer Overflow");
-
-					g_ErrorReport.Write("[Send Packet Error] SendBuffer Overflow\r\n");
 					Close();
 					return FALSE;
 				}
-				memcpy( m_SendBuf+m_nSendBufLen, buf, nLeft);
+
+				memcpy(
+					m_SendBuf + m_nSendBufLen,
+					SendBuffer.data() + nDx,
+					nLeft
+				);
+
 				m_nSendBufLen += nLeft;
-				//LogPrint("send() WSAEWOULDBLOCK : %d", WSAGetLastError());
+
 				return FALSE;
 			}
 		}
-		else {
-			if( nResult == 0 )
+		else
+		{
+			if (nResult == 0)
 			{
-				//LogPrint("send()  result is zero", WSAGetLastError());
 				break;
 			}
-			if( m_LogPrint )
+
+			if (m_LogPrint)
 			{
-				LogHexPrintS((BYTE*)buf, nResult);
+				LogHexPrintS(
+					SendBuffer.data() + nDx,
+					nResult
+				);
 			}
 		}
+
 		nDx += nResult;
 		nLeft -= nResult;
-		if( nLeft <= 0 ) break;
+
+		if (nLeft <= 0)
+		{
+			break;
+		}
 	}
+
 	return TRUE;
 }
 
