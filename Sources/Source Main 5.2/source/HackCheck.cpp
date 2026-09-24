@@ -35,33 +35,6 @@ void CHackCheck::Init()
 		);
 }
 
-int WINAPI CHackCheck::MyRecv(SOCKET s, BYTE* buf, int len, int flags)
-{
-	int result = gHackCheck.HookRecv(s, buf, len, flags);
-
-	if (result == SOCKET_ERROR || result == 0)
-	{
-		return result;
-	}
-
-	if (gHackCheck.CheckSocketPort(s))
-	{
-		gHackCheck.DecryptData(buf, result);
-	}
-
-	return result;
-}
-
-int WINAPI CHackCheck::MySend(SOCKET s, BYTE* buf, int len, int flags)
-{
-	if (gHackCheck.CheckSocketPort(s))
-	{
-		gHackCheck.EncryptData(buf, len);
-	}
-
-	return gHackCheck.HookSend(s, buf, len, flags);
-}
-
 bool CHackCheck::CheckSocketPort(SOCKET s)
 {
 	SOCKADDR_IN addr;
@@ -99,8 +72,10 @@ void CHackCheck::EncryptData(BYTE* lpMsg, int size)
 	for (int n = 0; n < size; n++)
 	{
 		int value =
-			((int)lpMsg[n] +
-				((int)this->EncDecKey2 * (int)this->EncDecKey1))
+			(
+				(int)lpMsg[n] +
+				((int)this->EncDecKey2 * (int)this->EncDecKey1)
+				)
 			^
 			(int)this->EncDecKey1;
 
