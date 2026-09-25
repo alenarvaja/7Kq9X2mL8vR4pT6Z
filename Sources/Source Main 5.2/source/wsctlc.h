@@ -74,6 +74,9 @@ public:
 		for( ; ; )
 		{
 			nResult = send(m_socket, (char*)buf+nDx, len-nDx, 0);
+
+			g_ConsoleDebug->Write(MCD_SEND, "[sSend] result=%d error=%d", nResult, (nResult == SOCKET_ERROR) ? WSAGetLastError() : 0);
+
 			if( nResult == SOCKET_ERROR )
 			{
 				if( WSAGetLastError() != WSAEWOULDBLOCK )

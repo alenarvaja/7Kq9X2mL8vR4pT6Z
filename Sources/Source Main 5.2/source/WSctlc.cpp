@@ -268,11 +268,14 @@ int CWsctlc::sSend(SOCKET socket, char* buf, int len)
 
 	while (1)
 	{
-		nResult = send(
-			socket,
-			(char*)SendBuffer.data() + nDx,
-			nLeft,
-			0
+		nResult = send(socket, (char*)SendBuffer.data() + nDx, len - nDx, 0);
+
+		g_ConsoleDebug->Write(
+			MCD_SEND,
+			"[sSend] send() returned=%d requested=%d error=%d",
+			nResult,
+			len - nDx,
+			(nResult == SOCKET_ERROR) ? WSAGetLastError() : 0
 		);
 
 		if (nResult == SOCKET_ERROR)

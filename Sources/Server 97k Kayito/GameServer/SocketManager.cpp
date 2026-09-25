@@ -325,7 +325,25 @@ bool CSocketManager::DataRecv(int index, IO_MAIN_BUFFER* lpIoBuffer)
 			{
 				if (header == 0xC3)
 				{
-					DecSize = gPacketManager.Decrypt(&DecBuff[1], &lpMsg[count + 2], (size - 2)) + 1;
+					gLog.Output(
+						LOG_CONNECT,
+						"[SENDCHECK TRACE] C3 received Index=%d Size=%d RawByte2=%02X",
+						index,
+						size,
+						lpMsg[count + 2]
+					);
+
+					DecSize = gPacketManager.Decrypt(
+						&DecBuff[1],
+						&lpMsg[count + 2],
+						(size - 2)
+					) + 1;
+
+					gLog.Output(
+						LOG_CONNECT,
+						"[SENDCHECK TRACE] Decrypt result=%d",
+						DecSize
+					);
 
 					DecSerial = DecBuff[1];
 
@@ -626,6 +644,12 @@ void CSocketManager::Disconnect(int index)
 
 void CSocketManager::OnRecv(int index, DWORD IoSize, IO_RECV_CONTEXT* lpIoContext)
 {
+	//gLog.Output(LOG_GENERAL,
+	//	"[ONRECV] index=%d IoSize=%d BufferSize=%d",
+	//	index,
+	//	IoSize,
+	//	lpIoContext->IoMainBuffer.size);
+
 	this->m_critical.lock();
 
 	if (OBJECT_USER_RANGE(index) == 0)
@@ -650,16 +674,16 @@ void CSocketManager::OnRecv(int index, DWORD IoSize, IO_RECV_CONTEXT* lpIoContex
 
 	DecryptData(&lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size], IoSize);
 
-	gLog.Output(
-		LOG_CONNECT,
-		"[RECV DEBUG] Index=%d Size=%d Bytes=%02X %02X %02X %02X",
-		index,
-		IoSize,
-		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 0],
-		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 1],
-		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 2],
-		lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 3]
-	);
+	//gLog.Output(
+	//	LOG_CONNECT,
+	//	"[RECV DEBUG] Index=%d Size=%d Bytes=%02X %02X %02X %02X",
+	//	index,
+	//	IoSize,
+	//	lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 0],
+	//	lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 1],
+	//	lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 2],
+	//	lpIoContext->IoMainBuffer.buff[lpIoContext->IoMainBuffer.size + 3]
+	//);
 
 #endif
 

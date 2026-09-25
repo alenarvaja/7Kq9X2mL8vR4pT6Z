@@ -109,7 +109,15 @@ __forceinline int SendPacket( char *buf, int len, BOOL bEncrypt = FALSE, BOOL bF
 		g_SimpleModulusCS.Encrypt( bc.byBuffer, byBuffer + iSkip, len - iSkip);
 		assert( iSize < 256);
 
-		return ( g_pSocketClient->sSend( ( char*)&bc, iLength));
+		g_ConsoleDebug->Write(
+			MCD_SEND,
+			"[SendPacket] C3 sending Head=%02X Size=%d Serial=%d",
+			buf[2],
+			iLength,
+			byBuffer[1]
+		);
+
+		return (g_pSocketClient->sSend((char*)&bc, iLength));
 	}
 	else
 	{
@@ -160,9 +168,9 @@ extern bool First;
 extern int FirstTime;
 extern BOOL g_bGameServerConnected;
 
-__forceinline void SendCheck( void)
-{	
-	if ( !g_bGameServerConnected)
+__forceinline void SendCheck(void)
+{
+	if (!g_bGameServerConnected)
 	{
 		return;
 	}
@@ -172,26 +180,26 @@ __forceinline void SendCheck( void)
 	g_ConsoleDebug->Write(MCD_SEND, "SendCheck");
 
 	CStreamPacketEngine spe;
-	spe.Init( 0xC1, 0x0E);
+	spe.Init(0xC1, 0x0E);
 	DWORD dwTick = GetTickCount();
-	spe.AddNullData( 1);
+	//spe.AddNullData( 1);
 	spe << dwTick;
 
-	if(CharacterAttribute->Ability & ABILITY_FAST_ATTACK_SPEED)
+	if (CharacterAttribute->Ability & ABILITY_FAST_ATTACK_SPEED)
 	{
-		spe << ( WORD)( CharacterAttribute->AttackSpeed-20) << ( WORD)( CharacterAttribute->MagicSpeed-20);
+		spe << (WORD)(CharacterAttribute->AttackSpeed - 20) << (WORD)(CharacterAttribute->MagicSpeed - 20);
 	}
-	else if(CharacterAttribute->Ability & ABILITY_FAST_ATTACK_SPEED2)
+	else if (CharacterAttribute->Ability & ABILITY_FAST_ATTACK_SPEED2)
 	{
-		spe << ( WORD)( CharacterAttribute->AttackSpeed-20) << ( WORD)( CharacterAttribute->MagicSpeed-20);
+		spe << (WORD)(CharacterAttribute->AttackSpeed - 20) << (WORD)(CharacterAttribute->MagicSpeed - 20);
 	}
 	else
 	{
-		spe << ( WORD)( CharacterAttribute->AttackSpeed) << ( WORD)( CharacterAttribute->MagicSpeed);
+		spe << (WORD)(CharacterAttribute->AttackSpeed) << (WORD)(CharacterAttribute->MagicSpeed);
 	}
-	spe.Send( TRUE);
+	spe.Send(TRUE);
 
-	if(!First)
+	if (!First)
 	{
 		First = true;
 		FirstTime = dwTick;

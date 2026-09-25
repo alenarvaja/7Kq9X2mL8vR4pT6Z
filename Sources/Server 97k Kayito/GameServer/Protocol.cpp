@@ -46,7 +46,20 @@ void ProtocolCore(BYTE head, BYTE* lpMsg, int size, int aIndex, int encrypt, int
 		serial
 	);
 
-	if (gObj[aIndex].Type == OBJECT_USER && gHackPacketCheck.CheckPacketHack(aIndex, head, ((lpMsg[0] == 0xC1) ? lpMsg[3] : lpMsg[4]), encrypt, serial) == 0)
+	//if (gObj[aIndex].Type == OBJECT_USER && gHackPacketCheck.CheckPacketHack(aIndex, head, ((lpMsg[0] == 0xC1) ? lpMsg[3] : lpMsg[4]), encrypt, serial) == 0)
+	//{
+	//	return;
+	//}
+
+	if (gObj[aIndex].Type == OBJECT_USER &&
+		head != 0x0E &&
+		gHackPacketCheck.CheckPacketHack(
+			aIndex,
+			head,
+			((lpMsg[0] == 0xC1) ? lpMsg[3] : lpMsg[4]),
+			encrypt,
+			serial
+		) == 0)
 	{
 		return;
 	}
@@ -740,6 +753,7 @@ void CGMainCheckRecv(PMSG_MAIN_CHECK_RECV* lpMsg, int aIndex)
 
 void CGLiveClientRecv(PMSG_LIVE_CLIENT_RECV* lpMsg, int aIndex)
 {
+
 	LPOBJ lpObj = &gObj[aIndex];
 
 	if (lpObj->Connected != OBJECT_LOGGED && lpObj->Connected != OBJECT_ONLINE)
